@@ -6,8 +6,8 @@ def fact x
   sum
 end
 
-def permutations n, k
-  fact(n)/fact(n-k)
+def permutations n
+  fact(2*n)/(fact(n)*fact(n))
 end
 
 
@@ -26,3 +26,4 @@ end
 p dynamically 2
 p dynamically 20
 
+p permutations 20
